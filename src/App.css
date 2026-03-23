@@ -181,17 +181,7 @@
     right: 0;
     border-right-color: var(--border);
   }
-  div[style*="padding: 20px"] { 
-  max-width: 800px;
-  width: 100%;
-  background: #ffffff;
-  margin: 40px 20px;
-  padding: 30px !important; 
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  line-height: 1.6;
-}
-body {
+  body {
   background-color: #f4f7f6;
   margin: 0;
   display: flex;
@@ -199,6 +189,19 @@ body {
   min-height: 100vh;
 }
 
+/* Container chính của App */
+div[style*="padding: 20px"] { /* Chọn thẻ div bọc ngoài cùng */
+  max-width: 800px;
+  width: 100%;
+  background: #ffffff;
+  margin: 40px 20px;
+  padding: 30px !important; /* Ghi đè inline style nếu cần */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+}
+
+/* Tiêu đề chính */
 h1 {
   color: #2c3e50;
   text-align: center;
@@ -208,6 +211,7 @@ h1 {
   padding-bottom: 10px;
 }
 
+/* Các tiêu đề mục con */
 h2 {
   color: #34495e;
   font-size: 1.2rem;
@@ -221,6 +225,7 @@ h2::before {
   margin-right: 10px;
 }
 
+/* Đường kẻ phân cách */
 hr {
   border: 0;
   height: 1px;
@@ -228,6 +233,7 @@ hr {
   margin: 25px 0;
 }
 
+/* Phần hiển thị tin nhắn từ con (Mục 3) */
 p strong {
   color: #e74c3c;
 }
@@ -239,6 +245,7 @@ p {
   border-radius: 4px;
 }
 
+/* Giúp các Component con (Counter, Message...) đẹp hơn */
 .container-child {
   padding: 15px;
   border: 1px dashed #ccc;
@@ -246,6 +253,7 @@ p {
   background: #fff;
 }
 
+/* Responsive cho thiết kế di động */
 @media (max-width: 600px) {
   div[style*="padding: 20px"] {
     margin: 10px;
