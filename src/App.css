@@ -181,12 +181,12 @@
     right: 0;
     border-right-color: var(--border);
   }
-  div[style*="padding: 20px"] { /* Chọn thẻ div bọc ngoài cùng */
+  div[style*="padding: 20px"] { 
   max-width: 800px;
   width: 100%;
   background: #ffffff;
   margin: 40px 20px;
-  padding: 30px !important; /* Ghi đè inline style nếu cần */
+  padding: 30px !important; 
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   line-height: 1.6;
