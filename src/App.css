@@ -219,11 +219,6 @@ h2 {
   align-items: center;
 }
 
-h2::before {
-  content: "🚀";
-  margin-right: 10px;
-}
-
 hr {
   border: 0;
   height: 1px;
@@ -238,7 +233,6 @@ p strong {
 p {
   background: #f9f9f9;
   padding: 10px 15px;
-  border-left: 4px solid #646cff;
   border-radius: 4px;
 }
 
