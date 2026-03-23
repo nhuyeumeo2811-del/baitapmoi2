@@ -2,6 +2,8 @@ import { useState } from 'react'
 import CounterStateful from '../components/CounterStateful'
 import MessageStateless from '../components/MessageStateless'
 import ChildToParent from '../components/ChildToParent'
+import './App.css';
+
 
 function App() {
   const [parentMessage, setParentMessage] = useState("Chưa có tin nhắn");
